@@ -47,7 +47,7 @@ export const Hero = () => {
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
           Capturing Vancouver's
-          <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <span className="block bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
             Premium Properties
           </span>
         </h1>

@@ -117,9 +117,9 @@ export const Contact = () => {
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                       <option value="">Select a package</option>
-                      <option value="essential">Essential Package ($299)</option>
-                      <option value="premium">Premium Package ($599)</option>
-                      <option value="luxury">Luxury Package ($999)</option>
+                      <option value="photos">Photos ($150)</option>
+                      <option value="videos">Videos ($300)</option>
+                      <option value="premium">Premium ($400)</option>
                       <option value="custom">Custom Quote</option>
                     </select>
                   </div>
@@ -175,7 +175,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">Phone</p>
-                    <p className="text-gray-600">(604) 555-0123</p>
+                    <p className="text-gray-600">+1 (778) 998-0116</p>
                   </div>
                 </div>
 
@@ -187,7 +187,19 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">Email</p>
-                    <p className="text-gray-600">info@vancouverrealestate.media</p>
+                    <p className="text-gray-600">hello@lavision.media</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-medium text-gray-900">Instagram</p>
+                    <p className="text-gray-600">@lavision.media</p>
                   </div>
                 </div>
 

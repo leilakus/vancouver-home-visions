@@ -5,8 +5,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export const Services = () => {
   const services = [
     {
-      title: "Essential Package",
-      price: "$299",
+      title: "Photos",
+      price: "$150",
       features: [
         "15-25 professional photos",
         "HDR photography",
@@ -18,31 +18,29 @@ export const Services = () => {
       popular: false
     },
     {
-      title: "Premium Package",
-      price: "$599",
+      title: "Videos",
+      price: "$300",
       features: [
-        "25-40 professional photos",
-        "HDR & twilight photography",
-        "Virtual staging (2 rooms)",
-        "Drone exterior shots",
-        "Floor plan photography",
-        "Advanced editing & enhancement",
+        "Cinematic video walkthrough",
+        "Professional editing",
+        "4K video quality",
+        "Multiple angles and shots",
+        "Background music included",
         "24-hour turnaround",
         "Commercial usage rights"
       ],
       popular: true
     },
     {
-      title: "Luxury Package",
-      price: "$999",
+      title: "Premium",
+      price: "$400",
       features: [
-        "40+ professional photos",
+        "25-40 professional photos",
         "Cinematic video walkthrough",
-        "4K drone footage",
-        "Virtual staging (unlimited)",
-        "Twilight & blue hour shots",
-        "360° virtual tour",
-        "Social media content package",
+        "HDR & twilight photography",
+        "Virtual staging (2 rooms)",
+        "Floor plan photography",
+        "Advanced editing & enhancement",
         "Same-day turnaround",
         "Full commercial rights"
       ],

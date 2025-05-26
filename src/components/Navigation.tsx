@@ -17,9 +17,14 @@ export const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-lg border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Vancouver Real Estate Media
+          <div className="flex-shrink-0 flex items-center">
+            <img 
+              src="/lovable-uploads/d85e5aa7-2ffd-44a7-b9f9-09f42c5606cd.png" 
+              alt="LaVision Media" 
+              className="h-10 w-auto"
+            />
+            <h1 className="text-xl font-bold text-gray-900 ml-3">
+              LaVision Media
             </h1>
           </div>
           
