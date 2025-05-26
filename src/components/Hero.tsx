@@ -47,7 +47,7 @@ export const Hero = () => {
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
           Capturing Vancouver's
-          <span className="block bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
+          <span className="block bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 bg-clip-text text-transparent">
             Premium Properties
           </span>
         </h1>
@@ -55,14 +55,14 @@ export const Hero = () => {
           Professional real estate photography and videography that sells homes faster and for higher prices
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-          <Button onClick={scrollToContact} size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-3">
+          <Button onClick={scrollToContact} size="lg" className="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-lg px-8 py-3 shadow-lg hover:shadow-xl transition-all duration-300">
             Book Your Shoot
           </Button>
           <Button 
             onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
             variant="outline" 
             size="lg" 
-            className="bg-white/10 border-white/30 text-white hover:bg-white/20 text-lg px-8 py-3"
+            className="bg-white/10 border-amber-400/50 text-white hover:bg-amber-600/20 hover:border-amber-300 text-lg px-8 py-3 transition-all duration-300"
           >
             View Portfolio
           </Button>
@@ -70,8 +70,8 @@ export const Hero = () => {
       </div>
       
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/50 rounded-full mt-2"></div>
+        <div className="w-6 h-10 border-2 border-amber-400/70 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-amber-400/70 rounded-full mt-2"></div>
         </div>
       </div>
     </section>
