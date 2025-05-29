@@ -45,12 +45,12 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-black/40"></div>
       
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+        <h1 className="text-3xl md:text-7xl font-bold mb-6 animate-fade-in">
           Professional Real Estate Photography and Videography in Greater Vancouver Area
         </h1>
-        <p className="text-xl md:text-2xl mb-8 text-gray-200 animate-fade-in">
+{/*         <p className="text-xl md:text-2xl mb-8 text-gray-200 animate-fade-in">
           Professional real estate photography and videography that sells homes faster and for higher prices
-        </p>
+        </p> */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
           <Button onClick={scrollToContact} size="lg" className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-lg px-8 py-3 shadow-lg hover:shadow-xl transition-all duration-300">
             Book Your Shoot
