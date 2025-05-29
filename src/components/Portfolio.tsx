@@ -67,12 +67,12 @@ export const Portfolio = () => {
       category: "exterior",
       type: "Photography"
     },
-    // Google Drive videos - Replace YOUR_FILE_ID with actual Google Drive file IDs
+    // Google Drive videos - using iframe embed format
     {
       id: 10,
-      video: "https://drive.google.com/uc?export=download&id=1y54mWU5uRmz20ChEDWZMRxXmn8UTF9x6",
+      videoEmbed: "https://drive.google.com/file/d/1y54mWU5uRmz20ChEDWZMRxXmn8UTF9x6/preview",
       title: "Property Walkthrough - West Vancouver",
-      category: "video", 
+      category: "video",
       type: "Video",
       isVertical: true
     }
@@ -88,7 +88,7 @@ export const Portfolio = () => {
   const filteredItems = selectedCategory === 'all' 
     ? portfolioItems 
     : selectedCategory === 'video'
-    ? portfolioItems.filter(item => item.video)
+    ? portfolioItems.filter(item => item.video || item.videoEmbed)
     : portfolioItems.filter(item => item.category === selectedCategory);
 
   return (
