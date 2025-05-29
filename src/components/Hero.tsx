@@ -6,9 +6,9 @@ export const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
   
   const heroImages = [
-    "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=1920&h=1080&fit=crop",
-    "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1920&h=1080&fit=crop"
+    "/lovable-uploads/_DSC2108 (1).jpg",
+    "/lovable-uploads/_DSC2273.jpg",
+    "/lovable-uploads/_DSC2114.jpg"
   ];
 
   useEffect(() => {
