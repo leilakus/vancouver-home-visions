@@ -46,21 +46,21 @@ export const Portfolio = () => {
       title: "Heritage Home - Kitsilano",
       category: "interior",
       type: "Photography"
-    }
+    },
         {
       id: 7,
       image: "/lovable-uploads/_DSC2217.jpg",
       title: "Heritage Home - Kitsilano",
       category: "interior",
       type: "Photography"
-    }
+    },
       {
       id: 8,
       image: "/lovable-uploads/_DSC2178.jpg",
       title: "Heritage Home - Kitsilano",
       category: "interior",
       type: "Photography"
-    }
+    },
       {
       id: 9,
       image: "/lovable-uploads/_DSC2313.jpg",
@@ -116,7 +116,7 @@ export const Portfolio = () => {
               <div className="relative overflow-hidden rounded-lg shadow-lg">
                 <img
                   src={item.image}
-{/*                   alt={item.title} */}
+                  alt={item.title}
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
