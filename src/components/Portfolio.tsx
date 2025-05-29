@@ -7,42 +7,63 @@ export const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=600&h=400&fit=crop",
+      image: "/lovable-uploads/_DSC2273.jpg",
       title: "Luxury Condo - Downtown Vancouver",
       category: "interior",
       type: "Photography"
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop",
+      image: "/lovable-uploads/_DSC2230.jpg",
       title: "Modern Family Home - West Vancouver",
-      category: "exterior",
+      category: "interior",
       type: "Photography"
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?w=600&h=400&fit=crop",
+      image: "/lovable-uploads/_DSC21086.jpg",
       title: "Waterfront Property - North Vancouver",
-      category: "exterior",
-      type: "Drone"
+      category: "interior",
+      type: "Photography"
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=600&h=400&fit=crop",
+      image: "/lovable-uploads/_DSC2262.jpg",
       title: "Mountain View Estate - Burnaby",
-      category: "exterior",
-      type: "Video"
+      category: "interior",
+      type: "Photography"
     },
     {
       id: 5,
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=600&h=400&fit=crop",
+      image: "/lovable-uploads/_DSC2139.jpg",
       title: "Designer Kitchen - Yaletown",
       category: "interior",
       type: "Photography"
     },
     {
       id: 6,
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop",
+      image: "/lovable-uploads/_DSC2114.jpg",
+      title: "Heritage Home - Kitsilano",
+      category: "interior",
+      type: "Photography"
+    }
+        {
+      id: 7,
+      image: "/lovable-uploads/_DSC2217.jpg",
+      title: "Heritage Home - Kitsilano",
+      category: "interior",
+      type: "Photography"
+    }
+      {
+      id: 8,
+      image: "/lovable-uploads/_DSC2178.jpg",
+      title: "Heritage Home - Kitsilano",
+      category: "interior",
+      type: "Photography"
+    }
+      {
+      id: 9,
+      image: "/lovable-uploads/_DSC2313.jpg",
       title: "Heritage Home - Kitsilano",
       category: "exterior",
       type: "Photography"
@@ -101,7 +122,7 @@ export const Portfolio = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
                     <p className="text-sm font-medium text-blue-300">{item.type}</p>
-                    <h3 className="text-lg font-semibold">{item.title}</h3>
+{/*                     <h3 className="text-lg font-semibold">{item.title}</h3> */}
                   </div>
                 </div>
               </div>
