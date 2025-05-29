@@ -152,23 +152,32 @@ export const Portfolio = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Videography</h3>
               <div className="flex justify-center">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl">
-                  {portfolioItems.filter(item => item.video).map((item) => (
+                  {portfolioItems.filter(item => item.video || item.videoEmbed).map((item) => (
                     <div key={item.id} className="group cursor-pointer">
                       <div className="relative overflow-hidden rounded-lg shadow-lg aspect-[9/16] max-w-xs mx-auto">
-                        <video
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                          controls
-                          preload="metadata"
-                          playsInline
-                          poster="/lovable-uploads/1111.jpg" // You can add a poster image URL here
-                        >
-                          <source src={item.video} type="video/mp4" />
-                          Your browser does not support the video tag.
-                        </video>
+                        {item.videoEmbed ? (
+                          <iframe
+                            src={item.videoEmbed}
+                            className="w-full h-full transition-transform duration-300 group-hover:scale-110"
+                            allow="autoplay; encrypted-media"
+                            allowFullScreen
+                            title={item.title}
+                          />
+                        ) : (
+                          <video
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                            controls
+                            preload="metadata"
+                            playsInline
+                            poster="/lovable-uploads/1111.jpg"
+                          >
+                            <source src={item.video} type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                        )}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                           <div className="absolute bottom-4 left-4 text-white">
                             <p className="text-sm font-medium text-blue-300">{item.type}</p>
-{/*                             <p className="text-xs text-gray-300 mt-1">{item.title}</p> */}
                           </div>
                         </div>
                       </div>
@@ -186,7 +195,19 @@ export const Portfolio = () => {
                 <div className={`relative overflow-hidden rounded-lg shadow-lg ${
                   item.isVertical ? 'aspect-[9/16] max-w-xs mx-auto' : ''
                 }`}>
-                  {item.video ? (
+                  {item.videoEmbed ? (
+                    <iframe
+                      src={item.videoEmbed}
+                      className={`w-full transition-transform duration-300 group-hover:scale-110 ${
+                        item.isVertical 
+                          ? 'h-full' 
+                          : 'h-64'
+                      }`}
+                      allow="autoplay; encrypted-media"
+                      allowFullScreen
+                      title={item.title}
+                    />
+                  ) : item.video ? (
                     <video
                       className={`w-full transition-transform duration-300 group-hover:scale-110 ${
                         item.isVertical 
@@ -196,7 +217,7 @@ export const Portfolio = () => {
                       controls
                       preload="metadata"
                       playsInline
-                      poster="/lovable-uploads/1111.jpg" // You can add a poster image URL here
+                      poster="/lovable-uploads/1111.jpg"
                     >
                       <source src={item.video} type="video/mp4" />
                       Your browser does not support the video tag.
@@ -211,7 +232,6 @@ export const Portfolio = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                     <div className="absolute bottom-4 left-4 text-white">
                       <p className="text-sm font-medium text-blue-300">{item.type}</p>
-{/*                       <p className="text-xs text-gray-300 mt-1">{item.title}</p> */}
                     </div>
                   </div>
                 </div>
