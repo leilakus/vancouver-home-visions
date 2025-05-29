@@ -133,7 +133,7 @@ export const Portfolio = () => {
                     <div className="relative overflow-hidden rounded-lg shadow-lg">
                       <img
                         src={item.image}
-{/*                         alt={item.title} */}
+                        alt={item.title}
                         className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -204,7 +204,7 @@ export const Portfolio = () => {
                   ) : (
                     <img
                       src={item.image}
-{/*                       alt={item.title} */}
+                      alt={item.title}
                       className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                   )}
