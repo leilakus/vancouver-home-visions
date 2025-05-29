@@ -6,7 +6,7 @@ export const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
   
   const heroImages = [
-    "/lovable-uploads/_DSC2108 (1).jpg",
+    "/lovable-uploads/_DSC21086.jpg",
     "/lovable-uploads/_DSC2273.jpg",
     "/lovable-uploads/_DSC2114.jpg"
   ];
