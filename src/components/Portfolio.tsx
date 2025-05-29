@@ -133,7 +133,7 @@ export const Portfolio = () => {
                     <div className="relative overflow-hidden rounded-lg shadow-lg">
                       <img
                         src={item.image}
-                        alt={item.title}
+{/*                         alt={item.title} */}
                         className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -196,7 +196,7 @@ export const Portfolio = () => {
                       controls
                       preload="metadata"
                       playsInline
-                      poster="" // You can add a poster image URL here
+                      poster="/lovable-uploads/1111.jpg" // You can add a poster image URL here
                     >
                       <source src={item.video} type="video/mp4" />
                       Your browser does not support the video tag.
@@ -204,14 +204,14 @@ export const Portfolio = () => {
                   ) : (
                     <img
                       src={item.image}
-                      alt={item.title}
+{/*                       alt={item.title} */}
                       className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                     <div className="absolute bottom-4 left-4 text-white">
                       <p className="text-sm font-medium text-blue-300">{item.type}</p>
-                      <p className="text-xs text-gray-300 mt-1">{item.title}</p>
+{/*                       <p className="text-xs text-gray-300 mt-1">{item.title}</p> */}
                     </div>
                   </div>
                 </div>
