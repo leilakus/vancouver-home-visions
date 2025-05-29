@@ -70,9 +70,9 @@ export const Portfolio = () => {
     // Google Drive videos - Replace YOUR_FILE_ID with actual Google Drive file IDs
     {
       id: 10,
-      video: "https://drive.google.com/file/d/1y54mWU5uRmz20ChEDWZMRxXmn8UTF9x6/view?usp=sharing",
+      video: "https://drive.google.com/uc?export=download&id=1y54mWU5uRmz20ChEDWZMRxXmn8UTF9x6",
       title: "Property Walkthrough - West Vancouver",
-      category: "exterior",
+      category: "video", 
       type: "Video",
       isVertical: true
     }
