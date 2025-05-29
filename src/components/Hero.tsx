@@ -46,7 +46,7 @@ export const Hero = () => {
       
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-2xl md:text-4xl font-bold mb-12 animate-fade-in">
-            Professional Real Estate Photography and Videography in Greater Vancouver Area
+            Leila Professional Real Estate Photography and Videography in Greater Vancouver Area
           </h1>
         {/*   <p className="text-xl md:text-2xl mb-8 text-gray-200 animate-fade-in">
             Professional real estate photography and videography that sells homes faster and for higher prices
