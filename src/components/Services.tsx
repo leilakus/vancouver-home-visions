@@ -56,11 +56,11 @@ export const Services = () => {
   };
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-br from-gray-50 to-yellow-50/30">
+    <section id="services" className="py-20 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-6 py-2 rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all duration-300 shadow-lg hover:shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Service <span className="bg-gradient-to-r from-yellow-700 to-yellow-800 bg-clip-text text-transparent">Packages</span>
+            Service <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-6 py-2 rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all duration-300 shadow-lg hover:shadow-xl">Packages</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Professional real estate media packages designed to showcase your property's best features
@@ -99,7 +99,7 @@ export const Services = () => {
                   onClick={scrollToContact}
                   className={`w-full transition-all duration-300 ${
                     service.popular 
-                      ? 'bg-gradient-to-r from-yellow-700 to-yellow-800 hover:from-yellow-800 hover:to-yellow-900 shadow-lg hover:shadow-xl' 
+                      ? 'bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-6 py-2 rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all duration-300 shadow-lg hover:shadow-xl' 
                       : 'bg-gray-800 hover:bg-gray-900'
                   }`}
                 >
