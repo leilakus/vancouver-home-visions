@@ -78,9 +78,9 @@ export const Services = () => {
                 </div>
               )}
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-bold text-gray-900 ml-4 bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">{service.title}</CardTitle>
+                <CardTitle className="text-2xl font-bold text-gray-900">{service.title}</CardTitle>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold bg-gradient-to-r from-yellow-700 to-yellow-800 bg-clip-text text-transparent">{service.price}</span>
+                  <span className="text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">{service.price}</span>
                   <span className="text-gray-600 ml-2">per property</span>
                 </div>
               </CardHeader>
