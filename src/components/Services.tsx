@@ -72,13 +72,13 @@ export const Services = () => {
             <Card key={index} className={`relative transition-all duration-300 hover:shadow-xl ${service.popular ? 'ring-2 ring-yellow-600 scale-105 shadow-xl' : 'hover:shadow-lg'}`}>
               {service.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-yellow-600 to-yellow-700 text-white px-4 py-1 rounded-full text-sm font-medium shadow-lg">
+                  <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-4 py-1 rounded-full text-sm font-medium shadow-lg">
                     Most Popular
                   </span>
                 </div>
               )}
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-bold text-gray-900">{service.title}</CardTitle>
+                <CardTitle className="text-2xl font-bold text-gray-900 ml-4 bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">{service.title}</CardTitle>
                 <div className="mt-4">
                   <span className="text-4xl font-bold bg-gradient-to-r from-yellow-700 to-yellow-800 bg-clip-text text-transparent">{service.price}</span>
                   <span className="text-gray-600 ml-2">per property</span>
@@ -99,7 +99,7 @@ export const Services = () => {
                   onClick={scrollToContact}
                   className={`w-full transition-all duration-300 ${
                     service.popular 
-                      ? 'bg-gradient-to-r from-yellow-700 to-yellow-800 hover:from-yellow-800 hover:to-yellow-900 shadow-lg hover:shadow-xl' 
+                      ? 'bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-700 hover:to-yellow-800 shadow-lg hover:shadow-xl' 
                       : 'bg-gray-800 hover:bg-gray-900'
                   }`}
                 >
