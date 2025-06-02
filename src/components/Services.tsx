@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -6,26 +5,27 @@ export const Services = () => {
   const services = [
     {
       title: "Photos",
-      price: "$150",
+      price: "$120",
+      oldPrice: "$150",
       features: [
-        "15-25 professional photos",
+        "25-30 professional photos",
         "HDR photography",
         "Basic editing & color correction",
         "Online gallery delivery",
-        "48-hour turnaround",
+        "24-hour turnaround",
         "Commercial usage rights"
       ],
       popular: false
     },
     {
       title: "Premium",
-      price: "$400",
+      price: "$300",
+      oldPrice: "$400",
       features: [
-        "25-40 professional photos",
-        "Cinematic video walkthrough",
-        "HDR & twilight photography",
-        "Virtual staging (2 rooms)",
-        "Floor plan photography",
+        "25-30 professional photos",
+        "2 cinematic video walkthrough",
+        "HDR photography",
+        "4K video quality",
         "Advanced editing & enhancement",
         "Same-day turnaround",
         "Full commercial rights"
@@ -34,9 +34,10 @@ export const Services = () => {
     },
     {
       title: "Videos",
-      price: "$300",
+      price: "$220",
+      oldPrice: "$300",
       features: [
-        "Cinematic video walkthrough",
+        "2 cinematic video walkthrough",
         "Professional editing",
         "4K video quality",
         "Multiple angles and shots",
@@ -80,8 +81,11 @@ export const Services = () => {
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-bold text-gray-900">{service.title}</CardTitle>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">{service.price}</span>
-                  <span className="text-gray-600 ml-2">per property</span>
+                  <div className="flex items-center justify-center gap-3 mb-1">
+                    <span className="text-lg text-gray-400 line-through">{service.oldPrice}</span>
+                    <span className="text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">{service.price}</span>
+                  </div>
+                  <span className="text-gray-600">per property</span>
                 </div>
               </CardHeader>
               <CardContent>
