@@ -49,7 +49,7 @@ export const Navigation = () => {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <button onClick={() => scrollToSection('portfolio')} className="block w-full text-left px-3 py-2 text-gray-700 hover:text-yellow-600 font-medium">Portfolio</button>
             <button onClick={() => scrollToSection('services')} className="block w-full text-left px-3 py-2 text-gray-700 hover:text-yellow-600 font-medium">Services</button>
-            <button onClick={() => scrollToSection('about')} className="block w-full text-left px-3 py-2 text-gray-700 hover:text-yellow-600 font-medium">About</button>
+{/*             <button onClick={() => scrollToSection('about')} className="block w-full text-left px-3 py-2 text-gray-700 hover:text-yellow-600 font-medium">About</button> */}
             <button onClick={() => scrollToSection('testimonials')} className="block w-full text-left px-3 py-2 text-gray-700 hover:text-yellow-600 font-medium">Reviews</button>
             <button onClick={() => scrollToSection('contact')} className="block w-full text-left px-3 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white rounded-lg font-medium">Contact</button>
           </div>
