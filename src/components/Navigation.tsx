@@ -17,11 +17,11 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
           <div className="flex-shrink-0 flex items-center">
-            <div className="bg-white rounded-lg p-3 shadow-sm">
+            <div className="bg-white rounded-lg p-2 shadow-sm">
               <img 
                 src="/lovable-uploads/1120f3e6-bb6a-4365-999c-f8d5ad90319a.png" 
                 alt="LaVision Media" 
-                className="h-20 w-auto"
+                className="h-18 w-auto"
               />
             </div>
             <h1 className="text-2xl font-bold text-gray-900 ml-4 bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
