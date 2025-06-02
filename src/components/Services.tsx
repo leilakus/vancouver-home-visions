@@ -60,7 +60,7 @@ export const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Service <span className="bg-gradient-to-r from-yellow-700 to-yellow-800 bg-clip-text text-transparent">Packages</span>
+            Service <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">Packages</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Professional real estate media packages designed to showcase your property's best features
