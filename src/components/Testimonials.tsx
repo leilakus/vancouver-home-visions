@@ -4,24 +4,24 @@ export const Testimonials = () => {
     {
       name: "Saiya Yesmurza",
       role: "Royal LaPage Realtor",
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=100&h=100&fit=crop&crop=face",
-      content: "The quality of work is exceptional. My listings with their photography sell 40% faster than the market average. The attention to detail and professionalism is unmatched.",
-      rating: 5
-    },
-    {
-      name: "Jennifer Roycroft PREC",
-      role: "Royal LaPage Realtor",
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=100&h=100&fit=crop&crop=face",
-      content: "I've worked with many photographers, but none deliver the wow factor like LaVision Media. Their video walkthroughs and professional photography are game-changers.",
-      rating: 5
-    },
-    {
-      name: "Jennifer Park",
-      role: "Coldwell Banker",
-      image: "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?w=100&h=100&fit=crop&crop=face",
-      content: "Fast turnaround, competitive pricing, and stunning results. They've become my go-to team for all luxury listings. Highly recommend to any serious realtor.",
+      image: "/lovable-uploads/realtor_1.jpg",
+      content: "As a realtor, I couldn’t be happier with the results. The quality of both the video and photos exceeded my expectations! They truly showcased the property in the best possible light. The turnaround time was impressively fast, and communication throughout the process was excellent. All of my requests and comments were carefully considered and implemented, which made the collaboration smooth and enjoyable. I highly recommend LaVision Media to anyone looking for professional, high-quality real estate media services. Thank you for your outstanding work!",
       rating: 5
     }
+    // {
+    //   name: "Jennifer Roycroft PREC",
+    //   role: "Royal LaPage Realtor",
+    //   image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=100&h=100&fit=crop&crop=face",
+    //   content: "I've worked with many photographers, but none deliver the wow factor like LaVision Media. Their video walkthroughs and professional photography are game-changers.",
+    //   rating: 5
+    // },
+    // {
+    //   name: "Jennifer Park",
+    //   role: "Coldwell Banker",
+    //   image: "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?w=100&h=100&fit=crop&crop=face",
+    //   content: "Fast turnaround, competitive pricing, and stunning results. They've become my go-to team for all luxury listings. Highly recommend to any serious realtor.",
+    //   rating: 5
+    // }
   ];
 
   return (
