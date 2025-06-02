@@ -117,9 +117,9 @@ export const Contact = () => {
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     >
                       <option value="">Select a package</option>
-                      <option value="photos">Photos ($150)</option>
-                      <option value="videos">Videos ($300)</option>
-                      <option value="premium">Premium ($400)</option>
+                      <option value="photos">Photos ($120)</option>
+                      <option value="videos">Videos ($220)</option>
+                      <option value="premium">Premium ($300)</option>
                       <option value="custom">Custom Quote</option>
                     </select>
                   </div>
