@@ -3,7 +3,7 @@ export const Testimonials = () => {
   const testimonials = [
     {
       name: "Saiya Yesmurza",
-      role: "Royal LaPage Realtor",
+      role: "Royal LePage Realtor",
       image: "/lovable-uploads/realtor_1.jpg",
       content: "As a realtor, I couldn’t be happier with the results. The quality of both the video and photos exceeded my expectations! They truly showcased the property in the best possible light. The turnaround time was impressively fast, and communication throughout the process was excellent. All of my requests and comments were carefully considered and implemented, which made the collaboration smooth and enjoyable. I highly recommend LaVision Media to anyone looking for professional, high-quality real estate media services. Thank you for your outstanding work!",
       rating: 5
