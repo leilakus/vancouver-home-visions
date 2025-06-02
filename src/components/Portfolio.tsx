@@ -153,19 +153,19 @@ export const Portfolio = () => {
               <div className="flex justify-center">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl">
                   {portfolioItems.filter(item => item.video || item.videoEmbed).map((item) => (
-                    <div key={item.id} className="group cursor-pointer">
+                    <div key={item.id} className="cursor-pointer">
                       <div className="relative overflow-hidden rounded-lg shadow-lg aspect-[9/16] max-w-xs mx-auto">
                         {item.videoEmbed ? (
                           <iframe
                             src={item.videoEmbed}
-                            className="w-full h-full transition-transform duration-300 group-hover:scale-110"
+                            className="w-full h-full"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
                             title={item.title}
                           />
                         ) : (
                           <video
-                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                            className="w-full h-full object-cover"
                             controls
                             preload="metadata"
                             playsInline
@@ -175,11 +175,6 @@ export const Portfolio = () => {
                             Your browser does not support the video tag.
                           </video>
                         )}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                          <div className="absolute bottom-4 left-4 text-white">
-                            <p className="text-sm font-medium text-blue-300">{item.type}</p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   ))}
@@ -191,14 +186,14 @@ export const Portfolio = () => {
           /* Filtered view - single grid */
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredItems.map((item) => (
-              <div key={item.id} className="group cursor-pointer">
+              <div key={item.id} className={item.video || item.videoEmbed ? "cursor-pointer" : "group cursor-pointer"}>
                 <div className={`relative overflow-hidden rounded-lg shadow-lg ${
                   item.isVertical ? 'aspect-[9/16] max-w-xs mx-auto' : ''
                 }`}>
                   {item.videoEmbed ? (
                     <iframe
                       src={item.videoEmbed}
-                      className={`w-full transition-transform duration-300 group-hover:scale-110 ${
+                      className={`w-full ${
                         item.isVertical 
                           ? 'h-full' 
                           : 'h-64'
@@ -209,7 +204,7 @@ export const Portfolio = () => {
                     />
                   ) : item.video ? (
                     <video
-                      className={`w-full transition-transform duration-300 group-hover:scale-110 ${
+                      className={`w-full ${
                         item.isVertical 
                           ? 'h-full object-cover' 
                           : 'h-64 object-cover'
@@ -229,11 +224,13 @@ export const Portfolio = () => {
                       className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p className="text-sm font-medium text-blue-300">{item.type}</p>
+                  {!item.video && !item.videoEmbed && (
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                      <div className="absolute bottom-4 left-4 text-white">
+                        <p className="text-sm font-medium text-blue-300">{item.type}</p>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             ))}
